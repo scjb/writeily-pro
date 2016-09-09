@@ -40,8 +40,11 @@
 
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
+                
+                <!--Allow Dropbox App to "Open with..." markdown files-->
+                <action android:name="android.intent.action.VIEW" />
+                
                 <category android:name="android.intent.category.DEFAULT" />
-
                 <data
                     android:host="*"
                     android:scheme="file"
